@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jules Chevalier's homepage</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+  <script src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/navigation.js"></script>
+  <script type="text/javascript" src="js/jquery.tweet.js"></script>
+
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <script type='text/javascript'>
+   jQuery(function($){
+    $(".tweet").tweet({
+     username: "ChevalierJules",
+     join_text: "auto",
+     avatar_size: 32,
+     count: 3,
+     auto_join_text_default: "", 
+     auto_join_text_ed: "",
+     auto_join_text_ing: "",
+     auto_join_text_reply: "",
+     auto_join_text_url: "",
+     loading_text: "loading tweets..."
+   });
+  });
+ </script>
+</head>
+
+<body>
+ <script>
+  document.write(menu());
+  $("#menuteach").addClass("active");
+</script>
+<div class="container">
+ <div class="page-header">
+  <h1>Teaching</h1>
+</div>
+
+<div class="row">
+
+<h2>Middleware</h2>
+
+<h3>Courses</h3>
+<ul>
+<li><a href="teaching/middleware/introduction.pdf">Introduction</a></li>
+<li><a href="teaching/middleware/ejb.pdf">Entreprise Java Beans</a></li>
+<li><a href="teaching/middleware/persistance.pdf">Persistence</a></li>
+</ul>
+
+<h3>Praticals</h3>
+<ul>
+<li><a href="teaching/middleware/tp1-rmi.pdf">TP1 RMI</a></li>
+<li><a href="teaching/middleware/tp2-rmi.pdf">TP2 RMI</a></li>
+<li><a href="teaching/middleware/tp1-ejb.pdf">TP1 EJB</a></li>
+</ul>
+
+<h3>Project</h3>
+<ul>
+<li><a href="teaching/middleware/projet-2014-2015.pdf">Final Project: Ikya</a></li>
+</ul>
+
+</div>
+</div>
+</body>
+</html>
