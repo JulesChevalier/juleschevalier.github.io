@@ -23,7 +23,7 @@ function menu()
           "<div class=\"nav-collapse\">"+
             "<ul class=\"nav\">"+
 							"<li id=\"menuhome\"><a href=\"./index.html\">Home</a></li>"+
-							"<li id=\"menupubli\"><a href=\"./publications.php\">Publications</a></li>"+
+							"<li id=\"menupubli\"><a href=\"./publications.html\">Publications</a></li>"+
               "<li id=\"menuteach\"><a href=\"./teaching.html\">Teaching</a></li>"+
             "</ul>"+
           "</div><!--/.nav-collapse -->"+

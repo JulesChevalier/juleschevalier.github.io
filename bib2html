@@ -1,0 +1,37 @@
+#!/bin/bash
+
+header='<!DOCTYPE html>
+<html lang="en">\n
+<head>\n
+  <meta charset="utf-8">\n
+  <title>Jules Chevalier"s homepage</title>\n
+  <meta name="description" content="">\n
+  <meta name="author" content="">\n
+  <script src="js/jquery-1.7.1.min.js"></script>\n
+  <script type="text/javascript" src="js/navigation.js"></script>\n
+  <link href="css/bootstrap.css" rel="stylesheet">\n
+  <link href="css/custom.css" rel="stylesheet">\n
+</head>\n
+<body>\n
+ <script>\n
+  document.write(menu());\n
+  $("#menupubli").addClass("active");\n
+</script>\n
+<div class="container">\n
+ <div class="page-header">\n
+  <h1>Publications</h1>\n
+</div>\n
+<div class="row">';
+
+footer='</div>\n
+</div>\n
+</body>\n
+</html>';
+
+bibtex2html --no-keywords --no-header -d -r -nodoc publications.bib
+
+bibtex=$(cat publications.html);
+
+echo -e $header > publications.html;
+echo $bibtex >> publications.html;
+echo -e $footer >> publications.html;
