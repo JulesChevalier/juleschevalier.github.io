@@ -3,9 +3,10 @@
 body {
   position: relative;
   padding-top: 90px;
-  background-color: #fdf5e8;
-  background-repeat: repeat-x;
-  background-position: 0 40px;
+  /*background-color: #fdf5e8;*/
+  background-repeat: repeat-x;/*
+  background-position: 0 40px;*/
+  background: url(../img/noise.jpg);
 }
 
 
