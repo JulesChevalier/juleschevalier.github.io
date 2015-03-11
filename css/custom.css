@@ -46,6 +46,10 @@ hr.soften {
   border: 0;
 }
 
+.project_item {
+  margin-bottom: 30px
+}
+
 
 /* Jumbotrons
 -------------------------------------------------- */
