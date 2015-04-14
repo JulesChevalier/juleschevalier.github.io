@@ -1,114 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Jules Chevalier's homepage</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/navigation.js"></script>
-<script type="text/javascript" src="js/jquery.tweet.js"></script>
 
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-61444495-1', 'auto');
-    ga('send', 'pageview');
+    <div class="container">
+        <!-- Navbar -->
 
-  </script>
-  <script>
-    document.write(menu());
-    $("#menuhome").addClass("active");
-  </script>
-  <div class="container">
-    <section>
-      <div class="page-header">
-        <h1>Jules Chevalier</h1>
-      </div>
-
-      <div class="row">
-        <div class="span10">
-          <div class="span6">
-            <img style="float:left; margin-right:33px;" src="./img/profile.png" width="150" height="180" alt="Jules Chevalier">
-            <p>Jules Chevalier<br/>
-              PhD Student<br/>
-              <a href="http://laboratoirehubertcurien.fr/">Laboratory Hubert Curien</a><br />
-              <a href="https://connected-intelligence.univ-st-etienne.fr">Connected Intelligence</a><br />
-              <a href="mailto:jules.chevalier@univ-st-etienne.fr">jules.chevalier@univ-st-etienne.fr</a><br />
-              +33 477 915 838<br /><br />
-              Télécom Saint-Etienne, Université Jean Monnet<br />
-              25, Rue Docteur Rémy Annino, F-42000 Saint-Etienne<br />
-            </p>
-
-            <a href="./publications.html">Most recent publications</a>
-          </div>
-          <div class="span3">
-            <h2>About</h2>
-            <p>
-              I started my PhD in October 2012, after a <a href="http://depinfo.univ-st-etienne.fr/Master/index.php" target="_blank">Web Intelligence Master</a> from <a href="http://portail.univ-st-etienne.fr/" target="_blank">Université Jean Monnet</a> (Saint Etienne, France).
-              My thesis is focused on large scale incremental reasoning on large knowledge bases.
-              I take part in courses on Semantic Web, middlewares and HTML/CSS.
-
-            </p>
-          </div>
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="">Home</a> -->
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <div class="btn-group">
+                        <a href="bootstrap-elements.html" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Language
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""><img src="imgs/gb.svg" class="flag_icon"> English</a></li>
+                            <li><a href=""><img src="imgs/fr.svg" class="flag_icon"> Fran&ccedil;ais</a></li>
+                        </ul>
+                    </div>            
+                </ul> -->
+            </div>
         </div>
-        <div class="span10">
-          <hr/>
-          <div class="span3">
-            <h2>Research</h2>
-            <p>
-              My thesis is focused on forward-chaining inference over the Web of Data.
-              This makes my work mainly related with Semantic Web, Big Data, Parallel and Distributed Architectures, and Cloud Computing.
-              I work essentially on an architecture for incremental reasoning on data streams, and its implementation in Java: <a href="http://juleschevalier.github.io/slider/" target="_blank">Slider</a>.
-            </p>
-          </div>
 
-          <div class="span3">
+        <div class="row">
+
+            <!-- Contact and About -->
+
+            <div class="row contact">
+
+                <!-- Contact -->
+
+                <div class="col-lg-7">
+                    <h1>Jules Chevalier</h1>
+                    <div class="col-lg-4 contact">
+                        <img src="imgs/profile.png" height="180">
+                    </div>
+
+                    <div class="col-lg-8 contact">
+                        <p>PhD Student<br/>
+                          <a href="http://laboratoirehubertcurien.fr/" target="_blank">Laboratory Hubert Curien</a><br/>
+                          <a href="https://connected-intelligence.univ-st-etienne.fr" target="_blank">Connected Intelligence</a><br/><br/>
+                          <a href="mailto:jules.chevalier@univ-st-etienne.fr">jules.chevalier@univ-st-etienne.fr</a><br/>
+                          +33 477 915 838<br/>
+                          T&eacute;l&eacute;com Saint-Etienne, Universit&eacute; Jean Monnet<br/>
+                          25, Rue Docteur R&eacute;my Annino,<br/>
+                          F-42000 Saint-Etienne<br/>
+                      </p>
+                  </div>
+
+              </div>
+
+              <!-- About -->
+
+              <div class="col-lg-4">
+                  <h2>About</h2>
+                  <p>
+                    I started my PhD in October 2012, after a <a href="http://depinfo.univ-st-etienne.fr/Master/index.php" target="_blank">Web Intelligence Master</a> from <a href="http://portail.univ-st-etienne.fr/" target="_blank">Universit&eacute; Jean Monnet</a> (Saint Etienne, France).
+                    <br/>
+                    My thesis is focused on large scale incremental reasoning with growing backgournd knowledge bases.
+                    <br/>
+                    I take part in courses on Semantic Web, middlewares and HTML/CSS.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Parts summary -->
+
+        <div class="col-lg-4">
+            <div class="bs-component">
+                <h2>Research</h2>
+                <p style="margin-top: 2em">
+                    My background from my Master includes advanced algorithmic, semantic web, data mining, multi-agent systems, ambient computing and information retrieval.
+                </p>
+                <p>
+                  My thesis is focused on forward-chaining inference over the Web of Data.
+                  This makes my work mainly related with Semantic Web, Big Data, Parallel and Distributed Architectures, and Cloud Computing.
+                  I work essentially on an architecture for incremental reasoning on data streams, and its implementation in Java: <a href="http://juleschevalier.github.io/slider/" target="_blank">Slider</a>.
+              </p>
+          </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bs-component">
             <h2>Teaching</h2>
-            <p>
-              I am currently involved in courses at <a href="http://depinfo.univ-st-etienne.fr/Master/index.php" target="_blank">Web Intelligence Master</a>, located at <a href="http://portail.univ-st-etienne.fr/" target="_blank">Université Jean Monnet</a>. More exactly, I am in charge of the course Middleware Networks, and give some tutorials in Semantic Web and HTML/CSS.
+            <p style="margin-top: 2em">
+              I am currently involved in courses at <a href="http://depinfo.univ-st-etienne.fr/Master/index.php" target="_blank">Web Intelligence Master</a>, located at <a href="http://portail.univ-st-etienne.fr/" target="_blank">Universit&eacute; Jean Monnet</a>. More exactly, I am in charge of the course Middleware Networks, and give some tutorials in Semantic Web and HTML/CSS.
               All the related documents can be found <a href="teaching.html">here</a>.
-            </p>
-          </div>
-
-          <div class="span3">
-            <h2>Projects</h2>
-            <ul>
-              <li class="project_item">
-                <h3><a href="http://juleschevalier.github.io/slider/" target="_blank">Slider</a></h3>
-                <p>
-                  An incremental, stream-based, forward chaining reasoner, natively supports &rho;df and RDFS.
-                  Slider provides both batch and stream reasoning, and allows custom rulesets.
-                  It is a full Java project.
-                </p>
-                <a href="http://demo-satin.telecom-st-etienne.fr/slider/" target="_blank" class="btn btn-info" role="button">View Demo</a> <a href="https://github.com/juleschevalier/slider" target="_blank" class="btn btn-success" role="button">Get source code !</a>
-              </li>
-              <li>
-                <h3><a href="http://www.opencloudware.org/bin/view/Main/" target="_blank">OpenCloudware</a></h3>
-                <p>
-                  My thesis is part of the project OpenCloudware, funded by the French <a href="http://www.caissedesdepots.fr/activites/investissements-davenir/le-fonds-national-pour-la-societe-numerique-fsn-services-usages-et-contenus-numeriques.html" target="_blank">Fonds national pour la Société Numérique</a> (FSN) and is supported by Pôles <a href="http://www.minalogic.org" target="_blank">Minalogic</a>, <a href="http://www.systematic-paris-region.org/en/get-info-topics/free-and-open-source-software" target="_blank">Systematic</a> and <a href="http://www.pole-scs.org/" target="_blank">SCS</a>
-                </p>
-              </li>
-            </ul>
-          </div>
-
-        </div>
+          </p>
       </div>
-    </section>		
-
   </div>
+  <div class="col-lg-4">
+    <div class="bs-component">
+        <h2><a href="projects.html">Projects</a></h2>
+        <h3><a href="http://juleschevalier.github.io/slider/" target="_blank">Slider</a></h3>
+        <p>
+          An incremental, stream-based, forward chaining reasoner, natively supports &rho;df and RDFS.
+          Slider provides both batch and stream reasoning, and allows custom rulesets.
+          It is a full Java project.
+      </p>
+      <a href="http://demo-satin.telecom-st-etienne.fr/slider/" target="_blank" class="btn btn-info btn-project" role="button">Demo</a> <a href="http://juleschevalier.github.io/slider/" target="_blank" class="btn btn-success btn-project" role="button">Source code</a>
+
+      <h3><a href="http://www.opencloudware.org/bin/view/Main/" target="_blank">OpenCloudware</a></h3>
+      <p>
+          My thesis is part of the project OpenCloudware, funded by the French <a href="http://www.caissedesdepots.fr/activites/investissements-davenir/le-fonds-national-pour-la-societe-numerique-fsn-services-usages-et-contenus-numeriques.html" target="_blank">Fonds national pour la Soci&eacute;t&eacute; Num&eacute;rique</a> (FSN) and is supported by P&ocirc;les <a href="http://www.minalogic.org" target="_blank">Minalogic</a>, <a href="http://www.systematic-paris-region.org/en/get-info-topics/free-and-open-source-software" target="_blank">Systematic</a> and <a href="http://www.pole-scs.org/" target="_blank">SCS</a>
+      </p>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- -->
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script>
+    $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+</script>
+
 </body>
+
 </html>
+

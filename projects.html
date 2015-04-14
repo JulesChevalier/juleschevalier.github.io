@@ -1,0 +1,151 @@
+<html>
+
+<head>
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Navbar -->
+
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="">Home</a> -->
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+                    <li class="active"><a href="projects.html">Projects</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <div class="btn-group">
+                        <a href="bootstrap-elements.html" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Language
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""><img src="imgs/gb.svg" class="flag_icon"> English</a></li>
+                            <li><a href=""><img src="imgs/fr.svg" class="flag_icon"> Fran&ccedil;ais</a></li>
+                        </ul>
+                    </div>            
+                </ul> -->
+            </div>
+        </div>
+
+        <div class="row">
+
+         <div class="col-lg-12">
+             <h1>Slider</h1>
+           <div class="col-lg-6">
+            <h3>What is Slider ?</h3>
+             <p>
+               Slider is an incremental forward-chaining reasoner supporting the following rule sets:
+               <ul>
+                <li>&rho;DF Default</li>
+                <li>&rho;DF Full</li>
+                <li>RDFS Default</li>
+                <li>RDFS Full</li>
+              </ul>
+
+              Slider allows to custom these fragments by selecting the rules to use for the inference. Additional rules can be easily added by implementing a single method.
+              <br/>
+              Slider provides both batch and incremental reasoning.
+              <br/>
+              It is a full Java project.
+            </p>
+            <h3>Main features</h3>
+            <ul>
+              <li> <b>Parallel and Scalable Execution</b>: Each inference rule is mapped to an independent module, receiving intended triples and later distributing them to other modules for further processing.</li>
+              <li> <b>Duplicates Limitation</b>: Vertical partitioning and multiple indexing limit the production of duplicates and avoid unnecessary computation.</li>
+              <li> <b>Data Stream Support</b>: Slider can handle both dynamic triple streams and static triples sets by employing parallel architecture.</li>
+              <li> <b>Fragment's Customization</b>: Slider natively support both RDFS and &rho;df fragments, and can be extended to any other fragments.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3>Architecture overview</h3>
+            <img src="imgs/overview.svg" style="width: 100%">
+            <h3>Get Slider !</h3>
+            <p>
+              Slider is provided under Apache License, Version 2.0.
+              You may obtain a copy of the License at <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>.
+            </p>
+            <p>
+              To get more informations about Slider, have a look to the <a href="http://juleschevalier.github.io/slider" target="_blank">home page</a> of the project.
+              The source code of the project can be downloaded  <a href="https://github.com/juleschevalier/slider" target="_blank">here</a>.
+              <br/>
+              A demonstration presenting the internal behavior of the reasoner is available <a href="http://demo-satin.telecom-st-etienne.fr/slider/" target="_blank">here</a>.
+            </p>
+            <h3>Publications</h3>
+            <p><small>
+              [<a name="Chevalier2015">1</a>] Jules Chevalier, Julien Subercaze, Christophe Gravier, and Laforest Fr&eacute;d&eacute;rique. Slider: an Efficient Incremental Reasoner. <em>SIGMOD</em>, 2015. [&nbsp;<a href="publications_bib.html#Chevalier2015">bib</a>&nbsp;| <a href="documents/presentations/papers/sigmod2015-jchevalier.pdf">pdf</a>&nbsp;]
+            </small></p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+         <h1>OpenCloudware</h1>
+         <div class="col-lg-6">
+          <h4>Project informations</h4>
+          <p>
+            OpenCloudware is a collaborative project. The <a href="/bin/view/About/Consortium">project members</a> include industry and academic leaders, innovative technology start-ups and a world-renowned open source community.
+          </p>
+          <p>
+            OpenCloudware outputs will be offered under an OSI compliant open source license and the code distributed via the OW2 Consortium <a href="http://forge.ow2.org/">software forge</a> as part of the OW2 <a href="http://ow2.org/view/Cloud/">Open Source Cloudware Initiative</a>&gt;.
+          </p>
+          <p>
+            The project started in January 2012 and is planned to last three years, until December 2014. The end of project has been postponed until September 2015.&nbsp;
+          </p>
+         <!-- <img src="imgs/ocw.png" style="width: 50%"> -->
+        </div>
+         <div class="col-lg-6">
+          <h4>Consortium members</h4>
+          <p>
+            ActiveEon, Armines, Bull, eNovance, eXo Platform, France Telecom (coordinator), &nbsp;Inria, IRIT &ndash; INP Toulouse, Linagora, OW2, Peergreen, T&eacute;l&eacute;com Paris Tech, T&eacute;l&eacute;com Saint Etienne, Thales Communications, Thales Services, Universit&eacute; Joseph Fourier, Universit&eacute; de Savoie &ndash; LISTIC, UShareSoft
+          </p>
+          <h4>Project sponsors</h4>
+          <p>
+            OpenCloudware is funded by the French <a href="http://www.caissedesdepots.fr/activites/investissements-davenir/le-fonds-national-pour-la-societe-numerique-fsn-services-usages-et-contenus-numeriques.html">Fonds national pour la Soci&eacute;t&eacute; Num&eacute;rique</a> (FSN), where it was accepted in the Cloud n&deg;1 call under the name &quot;CloudForce&quot;, and is supported by P&ocirc;les <a href="http://www.minalogic.org">Minalogic</a>, <a href="http://www.systematic-paris-region.org/en/get-info-topics/free-and-open-source-software">Systematic</a> and <a href="http://www.pole-scs.org/">SCS</a>.
+          </p>
+         </div>
+       </div>
+
+
+     </div>
+
+   </div>
+
+    <!-- -->
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+    </script>
+
+    </body>
+
+    </html>
+
